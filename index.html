@@ -1,0 +1,90 @@
+<html>
+    <head>
+        <title>NSX ALB UI Hiring Assessment</title>
+        <link rel="stylesheet" href="https://unpkg.com/@clr/ui/clr-ui.min.css" />
+        <link rel="stylesheet" href="./playground/playground.css" />
+    </head>
+    <body>   
+        <div class="main-container">
+            <div class="header header-6">
+                <div class="header-nav">
+                    <a href="#" class="nav-link nav-text">
+                        VMware NSX-ALB UI Hiring Assessment
+                    </a>
+                </div>
+            </div>
+    
+            <div class="content-container">
+                <div class="content-area">
+                    <p>Please try the APIs in the playground to get to know them in detail.</p>
+
+                    <ul class="list api-list">
+                        <li>/top-tracks</li>
+                        <li>/top-artists</li>
+                        <li>/track</li>
+                        <li>/artist</li>
+                        <li>/similar-tracks</li>
+                        <li>/similar-artists</li>
+                    </ul>
+
+                <div class="playground">
+                    <h5>Playground</h5>
+                    <div class="clr-select-wrapper pg-select">
+                        <label 
+                            for="select-api" 
+                            class="clr-control-label"
+                        >
+                            Select an API
+                        </label>
+                        <select 
+                            id="select-api"
+                            class="clr-select"
+                            onchange="loadApi()"
+                        >
+                            <option value="">Select API</option>
+                            <option value="top-tracks">top-tracks</option>
+                            <option value="top-artists">top-artists</option>
+                            <option value="track">track</option>
+                            <option value="artist">artist</option>
+                            <option value="similar-tracks">similar-tracks</option>
+                            <option value="similar-artists">similar-artists</option>
+                        </select>
+                    </div>
+
+                    <div 
+                        id="spinner" 
+                        class="spinner-wrapper hide"
+                    >
+                        <span class="spinner spinner-inverse">
+                            Loading...
+                        </span>
+                    </div>
+
+                    <div 
+                        id="usage"
+                        class="usage hide"
+                    >
+                        <div class="usage-item">
+                            <h6>Description</h6>
+                            <div id='usage-desc'></div>
+                        </div>
+                        <div class="usage-item">
+                            <h6>Usage</h6>
+                            <p id="sample-url"></p>
+                        </div>
+                        <div class="usage-item">
+                            <h6 style="display: inline;">Sample Response for: </h6> 
+                            <span id="usage-demo-url"></span>
+                            <pre 
+                                id='sample-resp'
+                                class="samp-resp" 
+                                disabled
+                            ></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="./playground/playground.js"></script>
+</html>

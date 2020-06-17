@@ -1,0 +1,77 @@
+.api-list {
+    margin: 20px;
+}
+
+.playground {
+    margin-top: 25px;
+}
+
+.usage {
+    margin-top: 10px;
+}
+
+.usage-item {
+    margin: 5px;
+}
+
+.usage-item p {
+    margin: 0;
+    margin-left: 20px;
+}
+
+.pg-select {
+    margin: 20px 0;
+}
+
+.samp-resp {
+    margin: 10;
+    padding: 25px;
+    border: 1px solid;
+    height: 500px;
+    color: hsl(198, 0%, 95%);
+    overflow: scroll;
+    background-color: hsl(198, 0%, 20%);
+}
+
+.spinner-wrapper {
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.usage-item #usage-desc .method-desc {
+    margin-bottom: 10px;
+}
+
+.method-params {
+    color: #657b83;
+    font-family: Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+    width: 50%;
+    padding: 20px;
+    margin: 5px 20px;
+}
+
+.url-demo {
+    margin-left: 10px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.url-demo-sample {
+    font-style: italic;
+    margin-left: 5px;
+}
